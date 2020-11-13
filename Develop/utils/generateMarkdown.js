@@ -1,7 +1,7 @@
 const { doesNotMatch } = require("assert");
 
 // function to generate markdown for README
-function generateMarkdown(data) {
+function generateMarkdown(userResp, userInfo) {
   // We will base the markdown from the Good README directions in 01-HTML
   // Generate table of contents based on userResp
   let tableOfContents = `# Table of Contents`;

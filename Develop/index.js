@@ -112,7 +112,7 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(filename, JSON.stringify(data, null, '\t'), (err) => {
+    fs.writeFile(fileName, JSON.stringify(data, null, '\t'), (err) => {
         if (err) {
             return console.log(err);
         }
@@ -140,7 +140,7 @@ async function init() {
         console.log(markdown);
 
         // write markdown to file
-        await writeFileAsync(`ExampleREADME.md ${markdown}`);
+        await writeFileAsync('ExampleREADME.md', markdown);
     } catch (error) {
         console.log(error);
     }
