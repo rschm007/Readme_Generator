@@ -22,7 +22,7 @@ function generateMarkdown(data) {
     * [Tests](#tests)
     `};
 
-    if (userResp.credits ~== '') { tableOfContents += `
+    if (userResp.credits !== '') { tableOfContents += `
     * [Credits](#credits)
     `};
 
@@ -32,11 +32,9 @@ function generateMarkdown(data) {
     
     ## Description
 
-    * What this project does, how it does it, and why it was made *
+    * What this project does, how it does it, and why it was made. *
 
-    ${userResp.description}
-
-    `
+    ${userResp.description}`
 
     // add Table of Contents
     draftMarkdown += tableOfContents;
@@ -47,19 +45,62 @@ function generateMarkdown(data) {
 
     // Installation section
     if (userResp.installation !== '') {
-      draftMarkdown +=
-    }
+      draftMarkdown += `
+      ## Installation
 
+      *Steps required to install the project and get the development environment running.*
 
+      ${userResp.installation}
+      `};
 
+    // add Usage section
+    if (userResp.usage !== '') {
+      draftMarkdown += `
+      ## Usage
 
+      *Instructions and examples for use*
 
+      ${userResp.usage}
+      `};
 
+    // contributing section
+    if (userResp.contribute !== '') {
+      draftMarkdown += `
+      ## Contributing
 
+      *If you would like to contribute to this project, here is how you can do so.*
 
+      ${userResp.contribute}
+      `};
 
+    // tests section
+    if (userResp.tests !== '') {
+      draftMarkdown+= `
+      ## Tests
 
-`;
-}
+      *How to run the tests for this application*
+
+      ${userResp.tests}
+      `};
+
+    // credit section
+    if (userResp.credits !== '') {
+      draftMarkdown+= `
+      ## Acknowledgements
+
+      *These people contributed to the completion of this project*
+
+      ${userResp.credits}
+      `};
+
+    // License section
+    draftMarkdown+= `
+    ## License
+
+    ${userResp.license}
+    `;
+
+    return draftMarkdown;
+};
 
 module.exports = generateMarkdown;

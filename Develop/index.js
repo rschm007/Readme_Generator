@@ -133,6 +133,10 @@ async function init() {
         // Call GitHub API to retrieve user information
         const userInfo = await api.getUser(userResp);
         console.log(`Your GitHub info: ${userInfo}`);
+
+        // pass inquirer and github api info to generateMarkdown.js
+        console.log("README is being written!")
+        const markdown = generateMarkdown(userResp, userInfo);
         console.log(markdown);
 
         // write markdown to file
