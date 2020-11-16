@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 undefined
       <br>
       ## Installation
@@ -45,4 +46,3 @@ undefined
     <br>
     undefined
     <br>
-    
