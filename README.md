@@ -16,7 +16,7 @@ Features
 -----------------------------
 When the user runs index.js the application uses the inquirer package to prompt questions in the CLI. The application then takes your responses and uses axios to fetch your GitHub profile data using the GitHub API. After that, the app will generate a markdown for the README based on the user responses. Lastly, fs.writeFile generates the README.md.
 
-<img src="https://raw.githubusercontent.com/rschm007/Portfolio_Page/master/assets/imgs/portfolio_gif-1.gif" alt="Robert Schmahl Portfolio gif" style="max-width:100%;">
+<img src="https://raw.githubusercontent.com/rschm007/Readme_Generator/main/Develop/Assets/demo_1.gif" alt="Readme Generator app demo gif" style="max-width:100%;">
 
 
 Authors
