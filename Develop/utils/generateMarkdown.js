@@ -13,7 +13,6 @@ function generateMarkdown(userResp, userInfo) {
       ## ${userResp.title}
       <br>
       -----------------------------
-      <br>
       `;
   }
 
@@ -73,6 +72,8 @@ function generateMarkdown(userResp, userInfo) {
         * [License](#license)
         `;
   }
+
+  draftMarkdown += ToC;
 
   // Installation section
   if (userResp.installation != "") {
@@ -154,11 +155,11 @@ function generateMarkdown(userResp, userInfo) {
   <br>
   ### Questions or comments?
   <br>
-  ![Profile Picture](${userInfo.avatar_url})
+  <img src="${userInfo.avatar_url}" alt="A profile pic of the developer"></img>
   <br>
   If you'd like to contact the developer, please use the info below:
   <br>
-  GitHub: [@${userInfo.login}](${userInfo.url})
+  GitHub: @${userInfo.login} (${userInfo.url})
   `;
   // if github email is valid, add it
   if (userInfo.email !== null) {
