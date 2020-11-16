@@ -7,16 +7,16 @@ function generateMarkdown(userResp, userInfo) {
   // Title section
     draftMarkdown += 
 `
-## ${userResp.title}
------------------------------
+# ${userResp.title}
+---
 ## Description
------------------------------
+---
 ${userResp.description}
 `;
 
   // generate table of contents
   let ToC = 
-`## Table of Contents`;
+`# Table of Contents`;
   // installation ToC
   if (userResp.installation !== "") {
     ToC += 
@@ -65,8 +65,8 @@ ${userResp.description}
   if (userResp.installation !== "") {
     draftMarkdown += 
 `
-## Installation
------------------------------
+# Installation
+---
 ${userResp.installation}
 
 `};
@@ -75,8 +75,8 @@ ${userResp.installation}
   if (userResp.usage !== "") {
     draftMarkdown += 
 `
-## Usage
------------------------------
+# Usage
+---
 ${userResp.usage}
 
 `};
@@ -85,8 +85,8 @@ ${userResp.usage}
   if (userResp.contribute !== "") {
     draftMarkdown += 
 `
-## Contributing
------------------------------
+# Contributing
+---
 ${userResp.contribute}
 
 `};
@@ -95,8 +95,8 @@ ${userResp.contribute}
   if (userResp.tests !== "") {
     draftMarkdown += 
 `
-## Tests
------------------------------
+# Tests
+---
 ${userResp.tests}
 
 `};
@@ -105,8 +105,8 @@ ${userResp.tests}
   if (userResp.credits !== "") {
     draftMarkdown += 
 `
-## Acknowledgements
------------------------------
+# Acknowledgements
+---
 ${userResp.credits}
 
 `};
@@ -115,8 +115,8 @@ ${userResp.credits}
   if (userResp.license !== "") {
   draftMarkdown += 
 `
-## License
------------------------------
+# License
+---
 ${userResp.license}
 
 `};
@@ -124,14 +124,14 @@ ${userResp.license}
   // Developer Section
   let devSection = 
 `
------------------------------
-### Questions or comments?
------------------------------
-<img src="${userInfo.avatar_url}" alt="A profile pic of the developer"></img>
+---
+## Questions or comments?
+---
+![Profile pic of the developer](${userInfo.avatar_url})
 
 If you'd like to contact the developer, please use the info below:
 
-GitHub:
+# GitHub:
 
 * @${userInfo.login} 
 

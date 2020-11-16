@@ -1,10 +1,10 @@
 
-## Project Title
------------------------------
+# Project Title
+---
 ## Description
------------------------------
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-## Table of Contents
+---
+Project Description
+# Table of Contents
 * [Installation](#installation)
 
 * [Usage](#usage)
@@ -17,44 +17,44 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem
 
 * [License](#license)
 
-## Installation
------------------------------
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+# Installation
+---
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 
 
-## Usage
------------------------------
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+# Usage
+---
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 
 
-## Contributing
------------------------------
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+# Contributing
+---
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 
 
-## Tests
------------------------------
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+# Tests
+---
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 
 
-## Acknowledgements
------------------------------
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+# Acknowledgements
+---
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 
 
-## License
------------------------------
-MIT
+# License
+---
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 
 
------------------------------
-### Questions or comments?
------------------------------
-<img src="https://avatars1.githubusercontent.com/u/69170803?v=4" alt="A profile pic of the developer"></img>
+---
+## Questions or comments?
+---
+![Profile pic of the developer](https://avatars1.githubusercontent.com/u/69170803?v=4)
 
 If you'd like to contact the developer, please use the info below:
 
-GitHub:
+# GitHub:
 
 * @rschm007 
 
