@@ -10,7 +10,7 @@ Repository <a href="https://github.com/rschm007/Readme_Generator">https://github
 Installation
 -----------------------------
 
-To install this application you will need a text editor like Visual Studio Code. You will also need node.js to type "npm install" in your CLI to install inquirer and assert packages
+To install this application you will need a text editor like Visual Studio Code. You will also need node.js to type "npm install" in your CLI to install the inquirer package
 
 Features
 -----------------------------
