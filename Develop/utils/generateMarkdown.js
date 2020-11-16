@@ -9,9 +9,8 @@ function generateMarkdown(userResp, userInfo) {
   // Title section
   if (userResp.title != "") {
     draftMarkdown += `
-      <br>
       ## ${userResp.title}
-      <br>
+      
       -----------------------------
       `;
   }
@@ -19,13 +18,13 @@ function generateMarkdown(userResp, userInfo) {
   // Description section
   if (userResp.description != "") {
     draftMarkdown += `
-      <br>
+      
       ## Description
-      <br>
+      
       -----------------------------
-      <br>
+      
       ${userResp.description}
-      <br>
+      
       `;
   }
 
@@ -33,42 +32,42 @@ function generateMarkdown(userResp, userInfo) {
   let ToC = "## Table of Contents";
   // installation ToC
   if (userResp.installation !== "") {
-    ToC += `<br>
+    ToC += `
       * [Installation](#installation)
       `;
   }
 
   // usage ToC
   if (userResp.usage !== "") {
-    ToC += `<br>
+    ToC += `
         * [Usage](#usage)
         `;
   }
 
   // contribute ToC
   if (userResp.contribute !== "") {
-    ToC += `<br>
+    ToC += `
         * [Contribute](#contribute)
         `;
   }
 
   // tests ToC
   if (userResp.tests !== "") {
-    ToC += `<br>
+    ToC += `
         * [Tests](#tests)
         `;
   }
 
   // credit ToC
   if (userResp.contribute !== "") {
-    ToC += `<br>
+    ToC += `
         * [Credits](#credits)
         `;
   }
 
   // license ToC
   if (userResp.contribute !== "") {
-    ToC += `<br>
+    ToC += `
         * [License](#license)
         `;
   }
@@ -78,52 +77,52 @@ function generateMarkdown(userResp, userInfo) {
   // Installation section
   if (userResp.installation != "") {
     draftMarkdown += `
-      <br>
+      
       ## Installation
-      <br>
+      
       -----------------------------
-      <br>
+      
       ${userResp.installation}
-      <br>
+      
       `;
   }
 
   // add Usage section
   if (userResp.usage != "") {
     draftMarkdown += `
-      <br>
+      
       ## Usage
-      <br>
+      
       -----------------------------
-      <br>
+      
       ${userResp.usage}
-      <br>
+      
       `;
   }
 
   // contributing section
   if (userResp.contribute != "") {
     draftMarkdown += `
-      <br>
+      
       ## Contributing
-      <br>
+      
       -----------------------------
-      <br>
+      
       ${userResp.contribute}
-      <br>
+      
       `;
   }
 
   // tests section
   if (userResp.tests != "") {
     draftMarkdown += `
-      <br>
+      
       ## Tests
-      <br>
+      
       -----------------------------
-      <br>
+      
       ${userResp.tests}
-      <br>
+      
       `;
   }
 
@@ -131,40 +130,44 @@ function generateMarkdown(userResp, userInfo) {
   if (userResp.credits != "") {
     draftMarkdown += `
       ## Acknowledgements
-      <br>
+      
       -----------------------------
-      <br>
+      
       ${userResp.credits}
-      <br>
+      
       `;
   }
 
   // License section
   draftMarkdown += `
-    <br>
+    
     ## License
-    <br>
+    
     -----------------------------
-    <br>
+    
     ${userResp.license}
-    <br>
+    
     `;
 
   // Developer Section
   let devSection = `
-  <br>
+  
   ### Questions or comments?
-  <br>
+  
   <img src="${userInfo.avatar_url}" alt="A profile pic of the developer"></img>
-  <br>
+  
   If you'd like to contact the developer, please use the info below:
-  <br>
-  GitHub: @${userInfo.login} (${userInfo.url})
+  
+  GitHub:
+  
+  * @${userInfo.login} 
+  
+  * (${userInfo.url})
   `;
   // if github email is valid, add it
   if (userInfo.email !== null) {
     devSection += `
-    <br>
+    
     Email: ${userInfo.email}
     `;
   }
