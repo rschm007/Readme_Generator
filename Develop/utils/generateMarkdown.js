@@ -5,26 +5,17 @@ function generateMarkdown(userResp, userInfo) {
   // We will base the markdown from the Good README directions in 01-HTML
 
   // Title section
-  if (userResp.title != "") {
     draftMarkdown += `
 
       ## ${userResp.title}
       -----------------------------
-      `};
-
-  // Description section
-  if (userResp.description != "") {
-    draftMarkdown += `
-      
       ## Description
       -----------------------------
-      
       ${userResp.description}
-      
-      `};
+      `;
 
   // generate table of contents
-  let ToC = "## Table of Contents";
+  let ToC = `## Table of Contents`;
   // installation ToC
   if (userResp.installation !== "") {
     ToC += `
@@ -66,10 +57,9 @@ function generateMarkdown(userResp, userInfo) {
   // Installation section
   if (userResp.installation != "") {
     draftMarkdown += `
-      
+      -----------------------------
       ## Installation
       -----------------------------
-      
       ${userResp.installation}
       
       `};
@@ -77,10 +67,9 @@ function generateMarkdown(userResp, userInfo) {
   // add Usage section
   if (userResp.usage != "") {
     draftMarkdown += `
-      
+      -----------------------------
       ## Usage
       -----------------------------
-      
       ${userResp.usage}
       
       `};
@@ -88,10 +77,9 @@ function generateMarkdown(userResp, userInfo) {
   // contributing section
   if (userResp.contribute != "") {
     draftMarkdown += `
-      
+    -----------------------------
       ## Contributing
       -----------------------------
-      
       ${userResp.contribute}
       
       `};
@@ -99,10 +87,9 @@ function generateMarkdown(userResp, userInfo) {
   // tests section
   if (userResp.tests != "") {
     draftMarkdown += `
-      
+      -----------------------------
       ## Tests
       -----------------------------
-      
       ${userResp.tests}
       
       `};
@@ -112,7 +99,6 @@ function generateMarkdown(userResp, userInfo) {
     draftMarkdown += `
       ## Acknowledgements
       -----------------------------
-      
       ${userResp.credits}
       
       `};
@@ -130,9 +116,9 @@ function generateMarkdown(userResp, userInfo) {
 
   // Developer Section
   let devSection = `
-  
+  -----------------------------
   ### Questions or comments?
-  
+  -----------------------------
   <img src="${userInfo.avatar_url}" alt="A profile pic of the developer"></img>
   
   If you'd like to contact the developer, please use the info below:
@@ -143,7 +129,7 @@ function generateMarkdown(userResp, userInfo) {
   
   * ${userInfo.url}
   `;
-  
+
   // if github email is valid, add it
   if (userInfo.email !== null) {
     devSection += `
