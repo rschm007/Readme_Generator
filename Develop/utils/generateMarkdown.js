@@ -8,40 +8,40 @@ function generateMarkdown(userResp, userInfo) {
     // define the table of contents sections based on what the user inputs
     if (userResp.installation !== '') { tableOfContents += `
     <br>
-    * [Installation](#installation)
+    Installation
     <br>
     `};
 
     if (userResp.usage !== '') { tableOfContents += `
     <br>
-    * [Usage](#usage)
+     [Usage](#usage)
     <br>
     `};
 
     if (userResp.contribute !== '') { tableOfContents += `
     <br>
-    * [Contributing](#contributing)
+    Contributing
     <br>
     `};
 
     if (userResp.tests !== '') { tableOfContents += `
     <br>
-    * [Tests](#tests)
+    Tests
     <br>
     `};
 
     if (userResp.credits !== '') { tableOfContents += `
     <br>
-    * [Credits](#credits)
+    Credits
     <br>
     `};
 
     let draftMarkdown = 
     `
     <br>
-    # ${userResp.title}
+    ${userResp.title}
     <br>
-    ## Description
+    Description
     <br>
     -----------------------------
     <br>
@@ -54,7 +54,7 @@ function generateMarkdown(userResp, userInfo) {
     // add License section
     draftMarkdown += `
     <br>
-    [License](#license)
+    License
     <br>
     -----------------------------
     <br>
@@ -64,7 +64,7 @@ function generateMarkdown(userResp, userInfo) {
     if (userResp.installation !== '') {
       draftMarkdown += `
       <br>
-      ## Installation
+      Installation
       <br>
       -----------------------------
       <br>
@@ -76,7 +76,7 @@ function generateMarkdown(userResp, userInfo) {
     if (userResp.usage !== '') {
       draftMarkdown += `
       <br>
-      ## Usage
+      Usage
       <br>
       -----------------------------
       <br>
@@ -88,7 +88,7 @@ function generateMarkdown(userResp, userInfo) {
     if (userResp.contribute !== '') {
       draftMarkdown += `
       <br>
-      ## Contributing
+      Contributing
       <br>
       -----------------------------
       <br>
@@ -100,7 +100,7 @@ function generateMarkdown(userResp, userInfo) {
     if (userResp.tests !== '') {
       draftMarkdown+= `
       <br>
-      ## Tests
+      Tests
       <br>
       -----------------------------
       <br>
@@ -111,7 +111,7 @@ function generateMarkdown(userResp, userInfo) {
     // credit section
     if (userResp.credits !== '') {
       draftMarkdown+= `
-      ## Acknowledgements
+      Acknowledgements
       <br>
       -----------------------------
       <br>
@@ -122,7 +122,7 @@ function generateMarkdown(userResp, userInfo) {
     // License section
     draftMarkdown+= `
     <br>
-    ## License
+    License
     <br>
     -----------------------------
     <br>
