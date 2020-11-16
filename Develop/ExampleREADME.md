@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 undefined
       <br>
       ## Installation
@@ -13,7 +12,7 @@ undefined
       <br>
       -----------------------------
       <br>
-      When the user runes index.js the application uses the inquirer package to prompt questions in the CLI. The application then takes your responses and uses axios to fetch your GitHub profile data using the GitHub API. After that, the app will generate a markdown for the README based on the user responses. Lastly, fs.writeFile generates the README.md.
+      to initialize this app you will need to open the directory in your CLI and run it with node index.js
       <br>
       
       <br>
@@ -21,7 +20,7 @@ undefined
       <br>
       -----------------------------
       <br>
-      If you would like to contribute, please send me a message on GitHub or make a fork request
+      If you would like to contribute, please send me a message or fork this repo
       <br>
       
       <br>
@@ -36,7 +35,7 @@ undefined
       <br>
       -----------------------------
       <br>
-      UCI Full Stack Flex program for providing the challenge
+      UCI Full Stack Flex web development for providing the code prompt
       <br>
       
     <br>
@@ -46,3 +45,4 @@ undefined
     <br>
     undefined
     <br>
+    
