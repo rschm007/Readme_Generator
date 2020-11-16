@@ -1,107 +1,49 @@
-<<<<<<< HEAD
 undefined
 
-      ## Project Title
-      -----------------------------
-      ## Description
-      -----------------------------
-      Project Description
-      ## Table of Contents
-      * [Installation](#installation)
-      
-      * [Usage](#usage)
-      
-      * [Contribute](#contribute)
-      
-      * [Tests](#tests)
-      
-      * [Credits](#credits)
-      
-      * [License](#license)
-      
+    ## Project Title
+    -----------------------------
+    ## Description
+    -----------------------------
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+    ## Table of Contents
+    * [Installation](#installation)
+    
+    * [Usage](#usage)
+    
+    * [Contribute](#contribute)
+    
+    * [Tests](#tests)
+    
+    * [Credits](#credits)
+    
+    * [License](#license)
+    
     
     ## Installation
     -----------------------------
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
     
     
-=======
-
-## readme generator
------------------------------
-## Description
------------------------------
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-## Table of Contents
-* [Installation](#installation)
-
-  * [Usage](#usage)
-
-  * [Contribute](#contribute)
-
-  * [Tests](#tests)
-
-  * [Credits](#credits)
-
-  * [License](#license)
-
------------------------------
-## Installation
------------------------------
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-
-
------------------------------
-## Usage
------------------------------
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-
-
------------------------------
-## Contributing
------------------------------
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-
-
------------------------------
-## Tests
------------------------------
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-
-
-## Acknowledgements
------------------------------
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-
-
-
-## License
------------------------------
-
-MIT
-
->>>>>>> 17758d53dddb01346b180f1dc8754d185c2addc7
     
     ## Usage
     -----------------------------
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
     
     
   
-<<<<<<< HEAD
     ## Contributing
     -----------------------------
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
 
     
     ## Tests
     -----------------------------
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
 
     
     ## Acknowledgements
     -----------------------------
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
 
     
     ## License
@@ -122,7 +64,3 @@ MIT
     
     * https://api.github.com/users/rschm007
     
-=======
-  * https://api.github.com/users/rschm007
-  
->>>>>>> 17758d53dddb01346b180f1dc8754d185c2addc7

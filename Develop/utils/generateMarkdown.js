@@ -7,50 +7,50 @@ function generateMarkdown(userResp, userInfo) {
   // Title section
     draftMarkdown += `
 
-      ## ${userResp.title}
-      -----------------------------
-      ## Description
-      -----------------------------
-      ${userResp.description}
-      `;
+    ## ${userResp.title}
+    -----------------------------
+    ## Description
+    -----------------------------
+    ${userResp.description}
+    `;
 
   // generate table of contents
   let ToC = `## Table of Contents`;
   // installation ToC
   if (userResp.installation !== "") {
     ToC += `
-      * [Installation](#installation)
-      `};
+    * [Installation](#installation)
+    `};
 
   // usage ToC
   if (userResp.usage !== "") {
     ToC += `
-      * [Usage](#usage)
-      `};
+    * [Usage](#usage)
+    `};
 
   // contribute ToC
   if (userResp.contribute !== "") {
     ToC += `
-      * [Contribute](#contribute)
-      `};
+    * [Contribute](#contribute)
+    `};
 
   // tests ToC
   if (userResp.tests !== "") {
     ToC += `
-      * [Tests](#tests)
-      `};
+    * [Tests](#tests)
+    `};
 
   // credit ToC
   if (userResp.contribute !== "") {
     ToC += `
-      * [Credits](#credits)
-      `};
+    * [Credits](#credits)
+    `};
 
   // license ToC
   if (userResp.contribute !== "") {
     ToC += `
-      * [License](#license)
-      `};
+    * [License](#license)
+    `};
 
   draftMarkdown += ToC;
 
