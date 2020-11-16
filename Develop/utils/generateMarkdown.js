@@ -1,5 +1,3 @@
-const { doesNotMatch } = require("assert");
-
 let draftMarkdown;
 
 // function to generate markdown for README
@@ -9,24 +7,21 @@ function generateMarkdown(userResp, userInfo) {
   // Title section
   if (userResp.title != "") {
     draftMarkdown += `
+
       ## ${userResp.title}
-      
       -----------------------------
-      `;
-  }
+      `};
 
   // Description section
   if (userResp.description != "") {
     draftMarkdown += `
       
       ## Description
-      
       -----------------------------
       
       ${userResp.description}
       
-      `;
-  }
+      `};
 
   // generate table of contents
   let ToC = "## Table of Contents";
@@ -34,43 +29,37 @@ function generateMarkdown(userResp, userInfo) {
   if (userResp.installation !== "") {
     ToC += `
       * [Installation](#installation)
-      `;
-  }
+      `};
 
   // usage ToC
   if (userResp.usage !== "") {
     ToC += `
         * [Usage](#usage)
-        `;
-  }
+        `};
 
   // contribute ToC
   if (userResp.contribute !== "") {
     ToC += `
         * [Contribute](#contribute)
-        `;
-  }
+        `};
 
   // tests ToC
   if (userResp.tests !== "") {
     ToC += `
         * [Tests](#tests)
-        `;
-  }
+        `};
 
   // credit ToC
   if (userResp.contribute !== "") {
     ToC += `
         * [Credits](#credits)
-        `;
-  }
+        `};
 
   // license ToC
   if (userResp.contribute !== "") {
     ToC += `
         * [License](#license)
-        `;
-  }
+        `};
 
   draftMarkdown += ToC;
 
@@ -79,75 +68,65 @@ function generateMarkdown(userResp, userInfo) {
     draftMarkdown += `
       
       ## Installation
-      
       -----------------------------
       
       ${userResp.installation}
       
-      `;
-  }
+      `};
 
   // add Usage section
   if (userResp.usage != "") {
     draftMarkdown += `
       
       ## Usage
-      
       -----------------------------
       
       ${userResp.usage}
       
-      `;
-  }
+      `};
 
   // contributing section
   if (userResp.contribute != "") {
     draftMarkdown += `
       
       ## Contributing
-      
       -----------------------------
       
       ${userResp.contribute}
       
-      `;
-  }
+      `};
 
   // tests section
   if (userResp.tests != "") {
     draftMarkdown += `
       
       ## Tests
-      
       -----------------------------
       
       ${userResp.tests}
       
-      `;
-  }
+      `};
 
   // credit section
   if (userResp.credits != "") {
     draftMarkdown += `
       ## Acknowledgements
-      
       -----------------------------
       
       ${userResp.credits}
       
-      `;
-  }
+      `};
 
   // License section
+  if (userResp.license != "") {
   draftMarkdown += `
     
     ## License
-    
     -----------------------------
     
     ${userResp.license}
     
-    `;
+    `};
 
   // Developer Section
   let devSection = `
@@ -162,15 +141,15 @@ function generateMarkdown(userResp, userInfo) {
   
   * @${userInfo.login} 
   
-  * (${userInfo.url})
+  * ${userInfo.url}
   `;
+  
   // if github email is valid, add it
   if (userInfo.email !== null) {
     devSection += `
     
     Email: ${userInfo.email}
-    `;
-  }
+    `};
 
   // add dev section to markdown
   draftMarkdown += devSection;
