@@ -1,9 +1,14 @@
 
-# Project Title
+# Readme Generator
+
+![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/rschm007/Readme Generator?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/rschm007/Readme Generator?style=flat&logo=appveyor)
+  
+Check out the badges hosted by [shields.io](https://shields.io/).
+
 ---
 ## Description
 ---
-Project Description
+This is a description
 # Table of Contents
 * [Installation](#installation)
 
@@ -19,32 +24,32 @@ Project Description
 
 # Installation
 ---
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+These are instructions
 
 
 # Usage
 ---
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+These are instructions
 
 
 # Contributing
 ---
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+These are instructions
 
 
 # Tests
 ---
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+These are instructions
 
 
 # Acknowledgements
 ---
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+These are instructions
 
 
 # License
 ---
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+MIT
 
 
 ---
