@@ -25,110 +25,107 @@ function generateMarkdown(userResp, userInfo) {
   // usage ToC
   if (userResp.usage !== "") {
     ToC += `
-        * [Usage](#usage)
-        `};
+      * [Usage](#usage)
+      `};
 
   // contribute ToC
   if (userResp.contribute !== "") {
     ToC += `
-        * [Contribute](#contribute)
-        `};
+      * [Contribute](#contribute)
+      `};
 
   // tests ToC
   if (userResp.tests !== "") {
     ToC += `
-        * [Tests](#tests)
-        `};
+      * [Tests](#tests)
+      `};
 
   // credit ToC
   if (userResp.contribute !== "") {
     ToC += `
-        * [Credits](#credits)
-        `};
+      * [Credits](#credits)
+      `};
 
   // license ToC
   if (userResp.contribute !== "") {
     ToC += `
-        * [License](#license)
-        `};
+      * [License](#license)
+      `};
 
   draftMarkdown += ToC;
 
   // Installation section
   if (userResp.installation != "") {
     draftMarkdown += `
-      -----------------------------
-      ## Installation
-      -----------------------------
-      ${userResp.installation}
-      
-      `};
+    
+    ## Installation
+    -----------------------------
+    ${userResp.installation}
+    
+    `};
 
   // add Usage section
   if (userResp.usage != "") {
     draftMarkdown += `
-      -----------------------------
-      ## Usage
-      -----------------------------
-      ${userResp.usage}
-      
-      `};
+    
+    ## Usage
+    -----------------------------
+    ${userResp.usage}
+    
+    `};
 
   // contributing section
   if (userResp.contribute != "") {
     draftMarkdown += `
+  
+    ## Contributing
     -----------------------------
-      ## Contributing
-      -----------------------------
-      ${userResp.contribute}
-      
-      `};
+    ${userResp.contribute}
+
+    `};
 
   // tests section
   if (userResp.tests != "") {
     draftMarkdown += `
-      -----------------------------
-      ## Tests
-      -----------------------------
-      ${userResp.tests}
-      
-      `};
+    ## Tests
+    -----------------------------
+    ${userResp.tests}
+
+    `};
 
   // credit section
   if (userResp.credits != "") {
     draftMarkdown += `
-      ## Acknowledgements
-      -----------------------------
-      ${userResp.credits}
-      
-      `};
+    ## Acknowledgements
+    -----------------------------
+    ${userResp.credits}
+
+    `};
 
   // License section
   if (userResp.license != "") {
   draftMarkdown += `
-    
     ## License
     -----------------------------
-    
     ${userResp.license}
-    
+
     `};
 
   // Developer Section
   let devSection = `
-  -----------------------------
-  ### Questions or comments?
-  -----------------------------
-  <img src="${userInfo.avatar_url}" alt="A profile pic of the developer"></img>
-  
-  If you'd like to contact the developer, please use the info below:
-  
-  GitHub:
-  
-  * @${userInfo.login} 
-  
-  * ${userInfo.url}
-  `;
+    -----------------------------
+    ### Questions or comments?
+    -----------------------------
+    <img src="${userInfo.avatar_url}" alt="A profile pic of the developer"></img>
+    
+    If you'd like to contact the developer, please use the info below:
+    
+    GitHub:
+    
+    * @${userInfo.login} 
+    
+    * ${userInfo.url}
+    `;
 
   // if github email is valid, add it
   if (userInfo.email !== null) {
