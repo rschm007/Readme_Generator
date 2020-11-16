@@ -1,5 +1,19 @@
 undefined
       <br>
+      ## Readme Generator
+      <br>
+      -----------------------------
+      <br>
+      
+      <br>
+      ## Description
+      <br>
+      -----------------------------
+      <br>
+      A CLI app that uses the inquirer package to generate a README.md file
+      <br>
+      
+      <br>
       ## Installation
       <br>
       -----------------------------
@@ -12,7 +26,7 @@ undefined
       <br>
       -----------------------------
       <br>
-      to initialize this app you will need to open the directory in your CLI and run it with node index.js
+      You will need to open your CLI in the root directory of your project and type node index.js
       <br>
       
       <br>
@@ -20,7 +34,7 @@ undefined
       <br>
       -----------------------------
       <br>
-      If you would like to contribute, please send me a message or fork this repo
+      If you'd like to contribute, please message me or make a fork request
       <br>
       
       <br>
@@ -35,7 +49,7 @@ undefined
       <br>
       -----------------------------
       <br>
-      UCI Full Stack Flex web development for providing the code prompt
+      UCI Full Stack Flex for providing the prompt
       <br>
       
     <br>
@@ -46,3 +60,12 @@ undefined
     undefined
     <br>
     
+  <br>
+  ### Questions or comments?
+  <br>
+  ![Profile Picture](https://avatars1.githubusercontent.com/u/69170803?v=4)
+  <br>
+  If you'd like to contact the developer, please use the info below:
+  <br>
+  GitHub: [@rschm007](https://api.github.com/users/rschm007)
+  
