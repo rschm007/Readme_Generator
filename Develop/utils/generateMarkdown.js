@@ -7,97 +7,127 @@ function generateMarkdown(userResp, userInfo) {
   let tableOfContents = `# Table of Contents`;
     // define the table of contents sections based on what the user inputs
     if (userResp.installation !== '') { tableOfContents += `
+    <br>
     * [Installation](#installation)
+    <br>
     `};
 
     if (userResp.usage !== '') { tableOfContents += `
+    <br>
     * [Usage](#usage)
+    <br>
     `};
 
     if (userResp.contribute !== '') { tableOfContents += `
+    <br>
     * [Contributing](#contributing)
+    <br>
     `};
 
     if (userResp.tests !== '') { tableOfContents += `
+    <br>
     * [Tests](#tests)
+    <br>
     `};
 
     if (userResp.credits !== '') { tableOfContents += `
+    <br>
     * [Credits](#credits)
+    <br>
     `};
 
     let draftMarkdown = 
     `
+    <br>
     # ${userResp.title}
-    
+    <br>
     ## Description
-
-    * What this project does, how it does it, and why it was made. *
-
-    ${userResp.description}`
+    <br>
+    -----------------------------
+    <br>
+    ${userResp.description}
+    <br>`;
 
     // add Table of Contents
     draftMarkdown += tableOfContents;
 
     // add License section
     draftMarkdown += `
-    * [License](#license)`;
+    <br>
+    [License](#license)
+    <br>
+    -----------------------------
+    <br>
+    `;
 
     // Installation section
     if (userResp.installation !== '') {
       draftMarkdown += `
+      <br>
       ## Installation
-
-      *Steps required to install the project and get the development environment running.*
-
+      <br>
+      -----------------------------
+      <br>
       ${userResp.installation}
+      <br>
       `};
 
     // add Usage section
     if (userResp.usage !== '') {
       draftMarkdown += `
+      <br>
       ## Usage
-
-      *Instructions and examples for use*
-
+      <br>
+      -----------------------------
+      <br>
       ${userResp.usage}
+      <br>
       `};
 
     // contributing section
     if (userResp.contribute !== '') {
       draftMarkdown += `
+      <br>
       ## Contributing
-
-      *If you would like to contribute to this project, here is how you can do so.*
-
+      <br>
+      -----------------------------
+      <br>
       ${userResp.contribute}
+      <br>
       `};
 
     // tests section
     if (userResp.tests !== '') {
       draftMarkdown+= `
+      <br>
       ## Tests
-
-      *How to run the tests for this application*
-
+      <br>
+      -----------------------------
+      <br>
       ${userResp.tests}
+      <br>
       `};
 
     // credit section
     if (userResp.credits !== '') {
       draftMarkdown+= `
       ## Acknowledgements
-
-      *These people contributed to the completion of this project*
-
+      <br>
+      -----------------------------
+      <br>
       ${userResp.credits}
+      <br>
       `};
 
     // License section
     draftMarkdown+= `
+    <br>
     ## License
-
+    <br>
+    -----------------------------
+    <br>
     ${userResp.license}
+    <br>
     `;
 
     return draftMarkdown;
