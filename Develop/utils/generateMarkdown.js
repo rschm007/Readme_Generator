@@ -13,9 +13,9 @@ function generateMarkdown(userResp, userInfo) {
   
 Check out the badges hosted by [shields.io](https://shields.io/).
 
----
+
 ## Description
----
+
 ${userResp.description}
 `;
 
@@ -71,7 +71,7 @@ ${userResp.description}
     draftMarkdown += 
 `
 # Installation
----
+
 ${userResp.installation}
 
 `};
@@ -81,7 +81,7 @@ ${userResp.installation}
     draftMarkdown += 
 `
 # Usage
----
+
 ${userResp.usage}
 
 `};
@@ -91,7 +91,7 @@ ${userResp.usage}
     draftMarkdown += 
 `
 # Contribute
----
+
 ${userResp.contribute}
 
 `};
@@ -101,7 +101,7 @@ ${userResp.contribute}
     draftMarkdown += 
 `
 # Tests
----
+
 ${userResp.tests}
 
 `};
@@ -111,7 +111,7 @@ ${userResp.tests}
     draftMarkdown += 
 `
 # Credits
----
+
 ${userResp.credits}
 
 `};
@@ -121,7 +121,7 @@ ${userResp.credits}
   draftMarkdown += 
 `
 # License
----
+
 ${userResp.license}
 
 `};
@@ -129,9 +129,9 @@ ${userResp.license}
   // Developer Section
   let devSection = 
 `
----
+
 ## Questions or comments?
----
+
 ![Profile pic of the developer](${userInfo.avatar_url})
 
 If you'd like to contact the developer, please use the info below:
