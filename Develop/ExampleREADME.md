@@ -24,7 +24,7 @@ This is a description
 
 # Installation
 ---
-These are installation steps
+These are instructions
 
 
 # Usage
@@ -32,7 +32,7 @@ These are installation steps
 These are instructions
 
 
-# Contributing
+# Contribute
 ---
 These are instructions
 
@@ -42,14 +42,14 @@ These are instructions
 These are instructions
 
 
-# Acknowledgements
+# Credits
 ---
-These are credits
+Credits
 
 
 # License
 ---
-This is a license
+License
 
 
 ---

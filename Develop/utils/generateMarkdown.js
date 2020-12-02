@@ -90,7 +90,7 @@ ${userResp.usage}
   if (userResp.contribute !== "") {
     draftMarkdown += 
 `
-# Contributing
+# Contribute
 ---
 ${userResp.contribute}
 
@@ -110,7 +110,7 @@ ${userResp.tests}
   if (userResp.credits !== "") {
     draftMarkdown += 
 `
-# Acknowledgements
+# Credits
 ---
 ${userResp.credits}
 
