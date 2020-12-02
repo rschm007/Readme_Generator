@@ -1,11 +1,15 @@
 Readme Generator
 -----------------------------
-
+![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/rschm007/Readme_Generator?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/rschm007/Readme_Generator?style=flat&logo=appveyor)
+  
+Check out the badges hosted by [shields.io](https://shields.io/).
 
 Links
 -----------------------------
 
 Repository <a href="https://github.com/rschm007/Readme_Generator">https://github.com/rschm007/Readme_Generator</a>
+
+Example Readme: <a href="https://github.com/rschm007/Readme_Generator/blob/main/Develop/ExampleREADME.md">https://github.com/rschm007/Readme_Generator/blob/main/Develop/ExampleREADME.md</a>
 
 Installation
 -----------------------------
